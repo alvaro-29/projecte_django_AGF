@@ -29,8 +29,6 @@ python manage.py test
 ## GitHub Actions
 Fitxer de CI ubicat a .github/workflows/test.yml.
 
-## Documentació Generada - Enllaços
-
-models.py
-
-views.py
+## Documentació Generada Enllaços
+- [models.py](https://htmlpreview.github.io/?https://github.com/alvaro-29/projecte_django_AGF/blob/main/docs/blog.models.html)
+- [views.py](https://htmlpreview.github.io/?https://github.com/alvaro-29/projecte_django_AGF/blob/main/docs/blog.views.html)
