@@ -6,7 +6,7 @@ Projecte de blog personal desenvolupat amb Django. Permet gestionar autors, etiq
 ## Instal·lació  
 
 1. Clonar el repositori:  
-git clone https://github.com/alvaro/blog-django.git
+git clone https://github.com/alvaro-29/projecte_django_AGF
 
 2. Instal·lar les dependències:
 pip install -r requirements.txt
