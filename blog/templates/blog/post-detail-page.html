@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Detall post - Blog{% endblock %}
+
+{% block content %}
+    <main>
+        <div>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.excerpt }}</p>
+            <hr>
+            <p><span class="date">{{ post.date }}</span><span> - {{ post.author }}</span></p>
+            <img src="{% static post.img_name %}" class="img_details">
+            <p>{{ post.content }}</p>
+        </div>
+    </main>
+{% endblock %}

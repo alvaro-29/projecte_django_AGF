@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.main-inici p {
+    font-size: 16px; /* o 1.1em, 1.2rem... segons prefereixis */
+    line-height: 1.6; /* opcional per més llegibilitat */
+}
+
+.navbar {
+    background-color: #307950;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navlink {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    width: 30.73%;
+    overflow: hidden; /* important per evitar que la imatge ampliada sobresurti */
+    position: relative;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* opcional: espacio entre tarjetas */
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #307950;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.imagen-estirada {
+    width: 100%;
+    height: 200px; /* Ajusta este valor para más/menos distorsión */
+    object-fit: cover; /* Opcional: recorta la imagen */
+    border: 1px solid #ccc; /* Opcional: borde para visualización */
+}
+
+.foto_post {
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    will-change: transform;
+}
+
+.img_details {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.btn:hover {
+    background-color: #265e40; /* Una mica més fosc que el verd original */
+    transform: scale(1.05);
+}
+
+.date {
+    color: grey;
+}
+
+.error-section {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.error-section h1 {
+    font-size: 3rem;
+    color: #c0392b;
+}
+
+.error-section p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}

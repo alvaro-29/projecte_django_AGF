@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Detall etiqueta - Blog{% endblock %}
+
+{% block content %}
+    <main>
+        <h1>Llistat amb tots els posts amb l'etiqueta <strong>{{ tag.caption }}</strong></h1>
+        <hr>
+        <div class="container">
+            {% for post in posts %}
+                {% include 'blog/post.html' %}
+            {% endfor %}
+        </div>
+    </main>
+{% endblock %}

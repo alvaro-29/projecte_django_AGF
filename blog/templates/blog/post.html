@@ -1,0 +1,9 @@
+{% load static %}
+<div class="card">
+    <img src="{% static post.img_name %}" class="foto_post">
+    <h2>{{ post.title }}</h2>
+    <p><strong>Autor:</strong> {{ post.author }}</p>
+    <p><strong>Data:</strong> {{ post.date }}</p>
+    <p>{{ post.excerpt }}</p>
+    <a href="{% url 'post-detail' post.slug %}" class="btn">Veure'n més!</a>
+</div>

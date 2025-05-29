@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Llista d'Autors - Blog{% endblock %}
+
+{% block content %}
+<main class="main-autors">
+    <h1>Llista d'Autors</h1>
+    
+    <table class="autors-table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Cognom</th>
+                <th>Accions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for autor in autors %}
+            <tr>
+                <td data-label="Nom">{{ autor.nom }}</td>
+                <td data-label="Cognom">{{ autor.cognom }}</td>
+                <td data-label="Accions">
+                    <a href="{% url 'author-detail' autor.id %}" class="saberne-btn">saberne +</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</main>
+{% endblock %}

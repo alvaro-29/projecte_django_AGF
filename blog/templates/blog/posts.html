@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Tots els posts - Blog{% endblock %}
+
+{% load static %}
+
+{% block content %}
+    <main>
+        <div class="container">
+            {% for post in posts %}
+                {% include 'blog/post.html' %}
+            {% endfor %}
+        </div>
+    </main>
+{% endblock %}

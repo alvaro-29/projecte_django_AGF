@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Etiquetes - Blog{% endblock %}
+
+{% block content %}
+<main>
+    <h1>Etiquetes:</h1>
+    <hr>
+    <div class="container">
+        {% for tag in tags %}
+            <a href="{% url 'tag-detail' tag.slug %}" class="btn">{{ tag.caption }}</a>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}

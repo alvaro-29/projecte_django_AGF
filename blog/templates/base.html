@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ca">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+</head>
+<body>
+    <header class="navbar">
+        <a href="/" class="logo">Blog M3-UF6</a>
+        <nav>
+            <a href="/" class="navlink">INICI</a>
+            <a href="/posts/" class="navlink">POSTS</a>
+            <a href="/autors/" class="navlink">AUTORS</a>
+            <a href="/tags/" class="navlink">TAGS</a>
+        </nav>
+    </header>
+    {% block content %}{% endblock %}
+    
+</body>
+</html>

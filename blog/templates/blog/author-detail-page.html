@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Detall autor - Blog{% endblock %}
+
+{% block content %}
+    <main>
+        <h1>Detalls de l'Autor</h1>
+        
+        <p><strong>Nom:</strong> {{ author.nom }}</p>
+        <p><strong>Cognom:</strong> {{ author.cognom }}</p>
+        <p><strong>E-mail:</strong> {{ author.email_address }}</p>
+        <hr>
+        <h2>Posts publicats per {{ author.nom }} {{ author.cognom }}:</h2>
+        <div class="container">
+            {% if author.posts.all %}
+                {% for post in author.posts.all %}
+                    {% include 'blog/post.html' %}
+                {% endfor %}
+            {% endif %}
+        </div>
+    </main>
+{% endblock %}
